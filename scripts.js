@@ -7,7 +7,7 @@ function getDogData() {
   };
 
   const url = 'https://api.thedogapi.com/v1/breeds/search?q=';
-  var dog = document.getElementById('dog1').value;
+
   fetch(url + dog, options)
     .then((data) => data.json())
     .then((response) => {
